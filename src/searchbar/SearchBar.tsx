@@ -41,6 +41,7 @@ export type SearchBarBaseProps = {
   blur?(): void;
   clear?(): void;
   cancel?(): void;
+  render?(): void;
 };
 
 export type SearchBarProps = SearchBarBaseProps &
