@@ -35,6 +35,12 @@ export type SearchBarBaseProps = {
   onChangeText?(text: string): void;
   onCancel?(): void;
   theme?: Theme;
+  placeholder: string;
+  value: string;
+  focus?(): void;
+  blur?(): void;
+  clear?(): void;
+  cancel?(): void;
 };
 
 export type SearchBarProps = SearchBarBaseProps &
